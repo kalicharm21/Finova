@@ -12,12 +12,20 @@ const Header =  async () => {
     <div className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
         <nav className="container mx-auto px py-4 flex justify-between items-center">
             <Link href="/">
+            <div className="flex items-center">
             <Image 
             src="/say.png" 
             alt="finovalogo"
             width={350}
             height={200}
             className="h-15 w-auto object-contain pl-4"/>
+            <Image 
+            src="/t.png" 
+            alt="finovatitle.png"
+            width={350}
+            height={200}
+            className="h-15 w-auto object-contain pl-3"/>
+            </div>
             </Link>
             <div className="flex items-center space-x-4 mr-4">
                 <SignedIn>

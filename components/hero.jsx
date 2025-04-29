@@ -29,7 +29,7 @@ const HeroSection = () => {
     // Dynamically load the spline-viewer script
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js";
+    // script.src = "https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js";
     document.body.appendChild(script);
 
     return () => {
@@ -57,10 +57,16 @@ const HeroSection = () => {
           </Link>
         </div>
 
-        <div className="hero-image-wrapper">
-          <div ref={imageRef} className="hero-image mt-10">
-            {/* This is your 3D model */}
-            <spline-viewer url="https://prod.spline.design/3Ihg5aI1n7G3uhIa/scene.splinecode"></spline-viewer>
+        <div className="hero-image-wrapper mt-5 md:mt-0">
+          <div ref={imageRef} className="hero-image">
+            <Image
+              src="/ban.jpg"
+              width={1280}
+              height={720}
+              alt="Dashboard Preview"
+              className="rounded-lg shadow-2xl border mx-auto"
+              priority
+            />
           </div>
         </div>
       </div>
