@@ -50,10 +50,10 @@ const HeroSection = () => {
         </p>
         <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
-            <Button size="lg" className="px-8"> Get Started </Button>
+            <Button size="lg" className="px-6"> Get Started </Button>
           </Link>
-          <Link href="https://www.linkedin.com/in/ishaan-mittal29">
-            <Button size="lg" variant="outline" className="px-8"> My Github </Button>
+          <Link href="/about">
+            <Button size="lg" variant="outline" className="px-8"> About </Button>
           </Link>
         </div>
 
