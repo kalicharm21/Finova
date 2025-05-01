@@ -7,6 +7,7 @@ import { Toaster } from "sonner";
 import { FaEnvelope, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";  // <-- Import Link here
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -112,6 +113,7 @@ export default function RootLayout({ children }) {
             </div>
           </footer>
           <SpeedInsights />
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
