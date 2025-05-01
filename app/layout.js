@@ -4,7 +4,7 @@ import { sub } from "date-fns";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";  // <-- Import Link here
 
 const inter = Inter({ subsets: ["latin"] });
@@ -90,16 +90,15 @@ export default function RootLayout({ children }) {
                       <FaLinkedin size={28} />
                     </a>
 
-                    {/* Instagram */}
+                    {/* E */}
                     <a
-                      href="https://www.instagram.com/yourusername"
-                      className="text-white hover:text-gray-300 transition-transform transform hover:scale-125"
-                      aria-label="Instagram"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaInstagram size={28} />
-                    </a>
+      href="mailto:imishaan296@gmail.com"
+      className="text-white hover:text-gray-300 transition-transform transform hover:scale-125"
+      aria-label="Email"
+    >
+      <FaEnvelope size={28} />
+    </a>
+
                   </div>
                 </div>
 
