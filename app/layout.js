@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 import { FaEnvelope, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";  // <-- Import Link here
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -110,6 +111,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           </footer>
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
