@@ -26,10 +26,8 @@ const HeroSection = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Dynamically load the spline-viewer script
     const script = document.createElement("script");
     script.type = "module";
-    // script.src = "https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js";
     document.body.appendChild(script);
 
     return () => {
